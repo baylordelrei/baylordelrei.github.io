@@ -34,6 +34,24 @@
     <h1>Test Page</h1>
     <img src="Orbit.jpg" alt="Moon" style="max-width: 100%; height: auto;">
     <br>
-    <a href="welcome.html"><button>Launch</button></a>
+    <button onclick="launchPage()">Launch</button>
+
+    <script>
+        function launchPage() {
+            document.body.innerHTML = `
+                <h1>Welcome</h1>
+                <style>
+                    body {
+                        background-color: black;
+                        color: white;
+                        font-family: Arial, sans-serif;
+                        text-align: center;
+                        margin: 0;
+                        padding: 50px;
+                    }
+                </style>
+            `;
+        }
+    </script>
 </body>
 </html>
