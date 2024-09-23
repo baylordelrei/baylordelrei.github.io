@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
+    <title>Delrei Landing Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,18 +28,32 @@
         button:hover {
             background-color: gray;
         }
+        .video-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: #444;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <h1>Test Page</h1>
-    <img src="Orbit.jpg" alt="Moon" style="max-width: 100%; height: auto;">
+    <h1>Delrei Landing Page</h1>
+    <img src="Orbit.jpg" alt="Orbit" style="max-width: 50%; height: auto;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <br>
-    <button onclick="launchPage()">Launch</button>
+    <button onclick="showUpdates()">Delrei Updates</button>
 
     <script>
-        function launchPage() {
+        function showUpdates() {
             document.body.innerHTML = `
-                <h1>Welcome</h1>
+                <h1>Delrei Updates</h1>
+                <div class="video-placeholder">
+                    <p>Video Streaming Section (Placeholder)</p>
+                </div>
                 <style>
                     body {
                         background-color: black;
